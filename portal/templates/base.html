@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{STATIC_URL}}style.css">
+    <link href="{% static "style.css" %}" rel="stylesheet">
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Livraria NQ</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <img class="logo" src="./SRC/IMG/Logo.png" alt="Logo Livraria NQ">
+        <div class="pesquisa">
+          <input type="search" name="pesquisa" id="pesquisa">
+          <a href="#">
+            <i class='bx bx-search-alt-2' ></i>
+          </a>
+        </div>
+        <table>
+            <tr>
+                <td>
+                  <a href="#">
+                    <i class='bx bxs-user'></i>
+                  </a>
+                </td>
+                <td>
+                  <a href="#">
+                    <i class='bx bxs-book'></i>
+                  </a>
+                </td>
+            </tr>
+        </table>
+      </nav>
+      <hr>
+    </header>
+    <main>
+      <h1>Livraria NQ</h1>
+      <p>Projeto didático para a utilização do framework Django.</p>
+    </main>
+    {% block content %}
+    {% endblock %}
+    <footer>
+      <hr>
+    </footer>
+  </body>
+</html>
